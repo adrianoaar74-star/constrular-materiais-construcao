@@ -1,5 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#1f2937"/>
-  <path d="M14 22 32 12l18 10v20L32 52 14 42Z" fill="#f97316"/>
-  <path d="M23 27h18v6H29v8h12v6H23Z" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="22" y1="18" x2="158" y2="162" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173A5E"/>
+      <stop offset="1" stop-color="#0E2237"/>
+    </linearGradient>
+    <linearGradient id="house" x1="42" y1="45" x2="112" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9A3D"/>
+      <stop offset="1" stop-color="#F0641E"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="180" height="180" rx="38" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <path d="M35 79L90 40L145 79V135H35V79Z" fill="url(#house)"/>
+    <path d="M61 135V100H91V135" fill="#173A5E"/>
+    <path d="M103 94H131V113H103V94Z" fill="#E9F6FF"/>
+    <path d="M103 118H131V135H103V118Z" fill="#E9F6FF"/>
+    <path d="M45 117H76" stroke="#FFF4E8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M45 128H76" stroke="#FFF4E8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M42 106H73" stroke="#FFF4E8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M121 47L143 63" stroke="#E9F6FF" stroke-width="7" stroke-linecap="round"/>
+    <path d="M142 61L152 74" stroke="#E9F6FF" stroke-width="7" stroke-linecap="round"/>
+    <path d="M146 76L135 88L157 95Z" fill="#FFB15F"/>
+  </g>
 </svg>
